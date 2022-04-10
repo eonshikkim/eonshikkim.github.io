@@ -17,3 +17,7 @@ For this project, I will build a personal portfolio site, a static website where
 - JavaScript
 - Git and GitHub
 - Command line and file navigation
+
+
+### References:
+- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
