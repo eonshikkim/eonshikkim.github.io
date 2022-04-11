@@ -21,3 +21,5 @@ For this project, I will build a personal portfolio site, a static website where
 
 ### References:
 - https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+- https://www.w3schools.com/html/html_layout.asp
+- https://www.w3schools.com/howto/howto_css_topnav_right.asp
