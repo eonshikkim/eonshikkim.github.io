@@ -37,3 +37,10 @@
 #topnav-right {
     float: right;
   }
+
+  #img{
+    align-items: right;
+  
+    width: 100px;
+    height:500px;
+  }
