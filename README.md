@@ -25,5 +25,6 @@ For this project, I will build a personal portfolio site, a static website where
 - https://www.w3schools.com/howto/howto_css_topnav_right.asp
 - https://www.w3docs.com/snippets/html/how-to-embed-pdf-in-html.html
 - https://www.w3schools.com/html/html_images.asp
+- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 
 - https://wlearnsmart.com/javascript-change-image-onclick-event/
