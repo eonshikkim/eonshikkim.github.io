@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eonshik's Portfolio website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eonshik Kim – UCF M.S. Cyber Security & Privacy (Security+). Software engineer turned cybersecurity, seeking Summer 2026 internships." />
+  <title>Eonshik Kim | Cybersecurity M.S. Portfolio</title>
+  
   <!-- Template Main CSS File -->
-  <link href="Assets/css/style.css" rel="stylesheet">
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Font Awesome -->
+  <link href="Assets/css/style.css" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://kit.fontawesome.com/db5e1ebd5e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,105 +23,127 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Toggle menu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
       </div>
     </div>
   </nav>
 
-  <section id="aboutme">
-    <br>
-    <br>
-    <br>
-    <div id="img">
-      <img src="Assets/img/pic1.jpg" id="myImg" alt="photo1">
-      <input type="button" onclick="changeImg()" value="Change the Picture">
-    </div>
-    <h1>About Me</h1>
-    <p>
-      Hello, everyone. My name is Eonshik Kim. I am hardworking, a problem solver, have a keen sense of organization and discipline. I have 4 years of software engineer experience and can cooperate reasonably with fellow workers. In terms of programming languages and technologies, I am experienced with Java, JavaScript, SQL, HTML, CSS, React.js, and Redux.
-      I have knowledege in network security and penetration testing. I am passionate about cybersecurity and am currently seeking cybersecurity-related job opportunities. 
-    </p>
-  </section>
-
-  <section id="projects">
-    <h1>Projects</h1>
-
-    <h2>Vulnerability Testing with Poison Tap</h2>
-    <p>
-      In this project, I explained the setup and utilization of Poison Tap, a hacking tool, to gain unauthorized access to a locked laptop on a Raspberry Pi Zero. Poison Tap was created by Sami Kamcar in 2016 and is an Ethernet device emulator over USB that can hijack Internet traffic and steal HTTP cookies. It outlined the steps of installing the software, successfully hacking the laptop, and the ability to look into cookies from websites such as Netflix. It also offered ways of guarding against such attacks, with one of the precaution measures being steering clear of HTTP-only websites, erasing browser cookies frequently, and using HTTPS websites.
-    </p>
-      
-      <iframe src="Assets/pdf/Project3.pdf" width="100%" height="500px"></iframe>
-
-      <h2>Ransomware Research Paper</h2>
+  <main>
+    <section id="aboutme">
+      <div style="height: 3rem"></div>
+      <div id="img">
+        <img src="Assets/img/pic1.jpg" id="myImg" alt="Portrait of Eonshik Kim" />
+        <input type="button" onclick="changeImg()" value="Change Picture" aria-label="Change picture" />
+      </div>
+      <h1>About Me</h1>
       <p>
-        In this report, I discussed hospitals' risks regarding ransomware attacks. It described the problem, stating that hospitals are attacked more often because they still use old operating systems and do not adequately protect their networks. I suggested three potential solutions: downloading ad-blocking programs, buying antivirus programs, and updating the operating systems. According to the proposed measures' feasibility, cost, time, and sustainability, I advised hospitals to upgrade operating systems and install ad-block software as the most effective measures to prevent ransomware attacks in hospitals.
+        I’m an <strong>M.S. student in Cyber Security &amp; Privacy at the University of Central Florida</strong> (Security+). I bring <strong>4 years of software engineering</strong> experience across Java, JavaScript, HTML/CSS, React, Redux, and SQL. I’m a collaborative, detail‑oriented problem solver with growing experience in network security and vulnerability analysis. I’m passionate about cybersecurity and am seeking <strong>Summer 2026</strong> opportunities in <strong>SOC, Application Security, or Financial Crimes/Risk</strong>.
       </p>
-      
-        <iframe src="Assets/pdf/Project4.pdf" width="100%" height="500px"></iframe>
+    </section>
 
+    <section id="projects">
+      <h1>Projects</h1>
+
+      <article>
+        <h2>Vulnerability Demonstration: PoisonTap (Lab)</h2>
+        <p>
+          Built a controlled lab demonstration of <em>PoisonTap</em> on a Raspberry Pi Zero to illustrate how an emulated USB Ethernet device can intercept HTTP traffic and capture session cookies. The write‑up documents setup at a high level and, importantly, <strong>defensive measures</strong> (enforce HTTPS, clear cookies, disable USB autorun, lock screen policies). Conducted on my own equipment for education and defensive security awareness only.
+        </p>
+        <iframe src="Assets/pdf/Project3.pdf" width="100%" height="500" title="PoisonTap Lab PDF"></iframe>
+      </article>
+
+      <article>
+        <h2>Ransomware Risk in Healthcare</h2>
+        <p>
+          Report analyzing why hospitals face elevated ransomware risk (legacy systems, flat networks) and evaluating mitigation options by feasibility, cost, time, and sustainability. Recommended prioritizing <strong>OS upgrades</strong> and <strong>ad‑blocking</strong> as high‑impact first steps, complemented by layered controls.
+        </p>
+        <iframe src="Assets/pdf/Project4.pdf" width="100%" height="500" title="Ransomware Report PDF"></iframe>
+      </article>
+
+      <article>
         <h2>Stuxnet Website</h2>
         <p>
-          I created a WordPress page that reviewed Stuxnet as a threat to cybersecurity. In the webpage, I explained what Stuxnet is, what cyberwarfare is, how it works, and whether this attack was ethical or unethical.
+          A WordPress microsite that introduces Stuxnet, outlines cyber‑physical attack vectors, and discusses ethics in cyberwarfare.
         </p>
-          <p2>
-            Website link: <a href="https://sites.google.com/view/stuxnet/home" id="project4" target="_blank"><i class="fas fa-link"></i></a>
-          </p2>
-         
+        <p>
+          Website:&nbsp;
+          <a href="https://sites.google.com/view/stuxnet/home" id="project4" target="_blank" rel="noopener noreferrer" aria-label="Stuxnet site (opens in new tab)">
+            <i class="fas fa-link" aria-hidden="true"></i>
+          </a>
+        </p>
+      </article>
 
+      <article>
+        <h2>Pulse PI</h2>
+        <p>
+          Pulse PI is a desktop app for real‑time heart‑rate tracking and historical trend analysis. I worked as a full‑stack developer: <strong>front end</strong> with HTML/CSS, vanilla JavaScript, and Bootstrap; <strong>back end</strong> with C# and ASP.NET Web API; <strong>testing</strong> with xUnit and Moq. Demo video below.
+        </p>
+        <p>
+          Demo:&nbsp;
+          <a href="https://www.youtube.com/watch?v=fM9Hq19yV44" id="project1" target="_blank" rel="noopener noreferrer" aria-label="Pulse PI demo video (opens in new tab)">
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+          </a>
+        </p>
+        <p>
+          GitHub:&nbsp;
+          <a href="https://github.com/mblahnik/PulsePI_APP" id="project2" target="_blank" rel="noopener noreferrer" aria-label="PulsePI_APP repo (opens in new tab)"><i class="fab fa-github" aria-hidden="true"></i></a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/mblahnik/PulsePI" id="project3" target="_blank" rel="noopener noreferrer" aria-label="PulsePI repo (opens in new tab)"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </p>
+        <iframe src="Assets/pdf/Project1.pdf" width="100%" height="500" title="Pulse PI PDF"></iframe>
+      </article>
 
-    <h2>Pulse PI</h2>
-    <p>I did a project about Pulse PI. Pulse PI is a heart rate monitoring desktop application that is used to track the heart rate. It provides real-time data collection and historical data analysis. It was a group project, and my role was a full stack developer. For the front-end development, I used HTMP/CSS, 
-      Vanilla JavaScript, and Bootstrap framework. For the back-end development, I used C# and ASP.NET web API. For unit testing, I used the Xunit and Moq framework. Here is a link to a video demonstration if you would like to know more about the project.     
-      <a href="https://www.youtube.com/watch?v=fM9Hq19yV44" id="project1" target="_blank"><i class="fab fa-youtube"></i></a></p>
-    <p2>
-      GitHub link for PulsePI_APP:  <a href="https://github.com/mblahnik/PulsePI_APP" id="project2" target="_blank"><i class="fab fa-github"></i></a>
-      GitHub link for PulsePI:  <a href="https://github.com/mblahnik/PulsePI" id="project3" target="_blank"><i class="fab fa-github"></i></a>
-    </p2>
-    <iframe src="Assets/pdf/Project1.pdf" width="100%" height="500px"></iframe>
-    <h2>TA Scheduling Application</h2>
-    <p>The TA scheduling application was created in order to provide the Computer Science Department at
-      UWM with a replacement for their current, antiquated method for scheduling TAs. The application was
-      developed using Python and the web framework Django.
-      The application supports several features, described subsequently, that will greatly improve the TA scheduling
-      system at UWM. The main features of the application are grouped into three categories: Account features,
-      Course features and Scheduling features.</p>
-      <p2>
-        GitHub link: <a href="https://github.com/mblahnik/TaScheduleizer" id="project4" target="_blank"><i class="fab fa-github"></i></a>
-      </p2>
-      <iframe src="Assets/pdf/Project2.pdf" width="100%" height="500px"></iframe>
+      <article>
+        <h2>TA Scheduling Application</h2>
+        <p>
+          A Django web app to modernize TA scheduling for UWM. Features include role‑based accounts, course management, and automated scheduling workflows to replace manual processes.
+        </p>
+        <p>
+          GitHub:&nbsp;
+          <a href="https://github.com/mblahnik/TaScheduleizer" id="project4" target="_blank" rel="noopener noreferrer" aria-label="TA Scheduleizer repo (opens in new tab)"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </p>
+        <iframe src="Assets/pdf/Project2.pdf" width="100%" height="500" title="TA Scheduling PDF"></iframe>
+      </article>
 
-  </section>
+    </section>
 
-  <br>
-  <br>
+    <section id="skills">
+      <h1>Skills</h1>
+      <div id="skills-container" aria-label="Icons for key technologies">
+        <i class="fab fa-html5" title="HTML5" aria-hidden="true"></i>
+        <i class="fab fa-css3-alt" title="CSS3" aria-hidden="true"></i>
+        <i class="fa-brands fa-java" title="Java" aria-hidden="true"></i>
+        <i class="fab fa-js" title="JavaScript" aria-hidden="true"></i>
+        <i class="fab fa-react" title="React" aria-hidden="true"></i>
+        <i class="fab fa-git" title="Git" aria-hidden="true"></i>
+        <i class="fas fa-terminal" title="CLI" aria-hidden="true"></i>
+        <i class="fab fa-npm" title="npm" aria-hidden="true"></i>
+        <i class="fab fa-node" title="Node.js" aria-hidden="true"></i>
+        <i class="fab fa-github" title="GitHub" aria-hidden="true"></i>
+      </div>
 
-  <section id="skills">
-    <h1>Skills</h1>
-    <div id="skills-container">
-    <i class="fab fa-html5"></i>
-    <i class="fab fa-css3-alt"></i>
-    <i class="fa-brands fa-java"></i>
-    <i class="fab fa-js"></i>
-    <i class="fab fa-react"></i>
-    <i class="fab fa-git"></i>
-    <i class="fas fa-terminal"></i>
-    <i class="fab fa-npm"></i>
-    <i class="fab fa-node"></i>
-    <i class="fab fa-github"></i>
-  </div>
-  </section>
+      <ul>
+        <li><strong>Security:</strong> CompTIA Security+ (SY0‑701); Wireshark; Nmap; basic Nessus &amp; Metasploit; Linux</li>
+        <li><strong>Development:</strong> Java; JavaScript; HTML/CSS; React; Redux; SQL</li>
+        <li><strong>Back end &amp; Testing:</strong> Python; C#; ASP.NET Web API; Django; xUnit; Moq</li>
+        <li><strong>Concepts:</strong> incident response, vulnerability assessment, IAM, risk/GRC basics</li>
+      </ul>
+    </section>
 
-  <br>
-  <br>
-
-  <section id="contact">
-    <h1>Contact</h1>
-    <a href="https://www.linkedin.com/in/eonshik-k-89639b142/" id="contact1" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/eonshikkim/" id="contact2" target="_blank"><i class="fab fa-github"></i></a>
-  </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>
+        <a href="https://www.linkedin.com/in/eonshik-k-89639b142/" id="contact1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/eonshikkim/" id="contact2" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">
+          <i class="fab fa-github"></i>
+        </a>
+      </p>
+    </section>
+  </main>
 
   <footer>
     <p>Author: Eonshik Kim</p>
