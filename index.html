@@ -486,12 +486,12 @@
             </ul>
           </div>
 
-          <!-- Simple contact form (mailto) -->
+          <!-- Quick Message form with JS mailto -->
           <div class="col-md-6">
             <div class="card shadow-sm border-0">
               <div class="card-body">
                 <h6 class="fw-semibold mb-3">Quick Message</h6>
-                <form action="mailto:eonshikkim@gmail.com" method="post" enctype="text/plain">
+                <form id="contact-form">
                   <div class="mb-3">
                     <label class="form-label">Name</label>
                     <input type="text" class="form-control" name="name" required />
@@ -511,6 +511,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -531,9 +532,31 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Auto-update year -->
+    <!-- Contact form mailto handler + year -->
     <script>
+      // Year in footer
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mailto builder for Quick Message form
+      const form = document.getElementById("contact-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = form.querySelector('input[name="name"]').value.trim();
+        const email = form.querySelector('input[name="email"]').value.trim();
+        const message = form.querySelector('textarea[name="message"]').value.trim();
+
+        const subject = encodeURIComponent("Portfolio contact from " + (name || "visitor"));
+        const bodyLines = [
+          "Name: " + (name || "N/A"),
+          "Email: " + (email || "N/A"),
+          "",
+          message
+        ];
+        const body = encodeURIComponent(bodyLines.join("\n"));
+
+        window.location.href = "mailto:eonshikkim@gmail.com?subject=" + subject + "&body=" + body;
+      });
     </script>
   </body>
 </html>
